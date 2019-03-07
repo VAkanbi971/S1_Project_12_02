@@ -31,7 +31,7 @@ var ratingAvg = ratingsSum / ratingsCount;
 var ratingReport = "<h1>Customer Reviews</h1>"
 ratingReport += "<h2>" + ratingAvg + " out of 5 stars (" + ratingsCount + " reviews)</h2>";
 
-
+// for loop for rating report to populate the retings
 for (var i = 0; i <= 2; i++) {
     ratingReport += "<div class='review'>";
     ratingReport += "<h1>" + ratingTitles[i] + "</h1>";
@@ -50,5 +50,5 @@ for (var i = 0; i <= 2; i++) {
     ratingReport += "</div>";
 }
 
-
+//gets the aside eleemt by its id of element
 document.getElementById("aside").innerHTML = ratingReport;
